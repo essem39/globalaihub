@@ -1,0 +1,148 @@
+/* ===== GlobalAIHub.org — Main Stylesheet ===== */
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#fff;--surface:#f8f9fa;--border:#e9ecef;
+  --text:#0f0f0f;--muted:#6c757d;--light:#adb5bd;
+  --accent:#16a34a;--accent-dark:#15803d;--accent-light:#dcfce7;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.6;font-size:15px}
+a{text-decoration:none;color:inherit}
+.container{max-width:1140px;margin:0 auto;padding:0 1.5rem}
+
+/* NAV */
+nav{background:#fff;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{display:flex;align-items:center;gap:8px;font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:700;color:var(--text)}
+.logo-dot{width:8px;height:8px;border-radius:50%;background:var(--accent)}
+.nav-menu{display:flex;align-items:center;gap:2rem}
+.nav-menu a{font-size:14px;color:var(--muted);font-weight:500;transition:.15s}
+.nav-menu a:hover,.nav-menu a.active{color:var(--text)}
+.nav-cta{background:var(--accent);color:#fff!important;padding:8px 20px;border-radius:8px;font-size:14px;font-weight:600!important}
+.nav-cta:hover{background:var(--accent-dark)!important}
+
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;gap:6px;padding:12px 24px;border-radius:8px;font-size:14px;font-weight:600;transition:.15s;cursor:pointer;border:none;font-family:'Inter',sans-serif}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:var(--accent-dark)}
+.btn-outline{background:#fff;color:var(--text);border:1.5px solid var(--border)}
+.btn-outline:hover{border-color:var(--accent);color:var(--accent)}
+
+/* SECTION */
+.section{padding:4rem 0}
+.section-label{font-size:12px;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.75rem}
+.section-title{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.5rem,3vw,2rem);font-weight:700;color:var(--text);margin-bottom:.75rem}
+.section-subtitle{font-size:16px;color:var(--muted);max-width:560px;line-height:1.7}
+.section-head{margin-bottom:2.5rem}
+
+/* FILTERS */
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:2rem}
+.pill{padding:7px 18px;border-radius:20px;font-size:13px;cursor:pointer;border:1.5px solid var(--border);background:#fff;color:var(--muted);transition:.15s;font-weight:500}
+.pill:hover{border-color:var(--accent);color:var(--accent)}
+.pill.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+
+/* TOOL CARDS */
+.tool-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.25rem}
+.tool-card{background:#fff;border:1px solid var(--border);border-radius:12px;padding:1.5rem;transition:.2s;display:flex;flex-direction:column;gap:14px}
+.tool-card:hover{border-color:var(--accent);box-shadow:0 4px 20px rgba(22,163,74,.1);transform:translateY(-2px)}
+.tool-card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.tool-icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;flex-shrink:0;overflow:hidden}
+.tool-icon img{width:32px;height:32px;object-fit:contain}
+.tool-tag{font-size:11px;font-weight:600;padding:4px 10px;border-radius:6px;background:var(--surface);color:var(--muted);border:1px solid var(--border)}
+.tool-name{font-family:'Space Grotesk',sans-serif;font-size:17px;font-weight:700;color:var(--text)}
+.tool-desc{font-size:14px;color:var(--muted);line-height:1.65;flex:1}
+.tool-footer{display:flex;align-items:center;justify-content:space-between;padding-top:14px;border-top:1px solid var(--border);margin-top:auto}
+.tool-price{font-size:13px;color:var(--muted);font-weight:500}
+.stars{color:#f59e0b;font-size:12px}
+.tool-rating{display:flex;align-items:center;gap:4px;font-size:12px;color:var(--muted)}
+.tool-btn{font-size:13px;font-weight:600;color:var(--accent);transition:.15s}
+.tool-btn:hover{color:var(--accent-dark)}
+
+/* STATS */
+.stats{border-bottom:1px solid var(--border)}
+.stats-inner{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:2rem 1.5rem;text-align:center;border-right:1px solid var(--border)}
+.stat:last-child{border-right:none}
+.stat-num{font-family:'Space Grotesk',sans-serif;font-size:2rem;font-weight:700;color:var(--accent)}
+.stat-label{font-size:13px;color:var(--muted);margin-top:4px}
+
+/* BLOG */
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.blog-card{background:#fff;border:1px solid var(--border);border-radius:12px;overflow:hidden;transition:.2s;display:block}
+.blog-card:hover{border-color:var(--accent);box-shadow:0 4px 20px rgba(22,163,74,.08)}
+.blog-img{height:160px;display:flex;align-items:center;justify-content:center;font-size:3rem}
+.blog-body{padding:1.25rem}
+.blog-tag{font-size:11px;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:.05em;margin-bottom:.5rem}
+.blog-title{font-family:'Space Grotesk',sans-serif;font-size:16px;font-weight:700;line-height:1.4;margin-bottom:.75rem;color:var(--text)}
+.blog-meta{font-size:12px;color:var(--muted)}
+
+/* PAGE HERO */
+.page-hero{padding:4rem 0 3rem;background:linear-gradient(180deg,#f0fdf4 0%,#fff 100%);border-bottom:1px solid var(--border);text-align:center}
+.page-hero h1{font-family:'Space Grotesk',sans-serif;font-size:2.5rem;font-weight:700;margin-bottom:1rem}
+.page-hero p{font-size:17px;color:var(--muted);max-width:540px;margin:0 auto}
+.hero-badge{display:inline-flex;align-items:center;gap:6px;background:var(--accent-light);color:var(--accent-dark);font-size:12px;font-weight:600;padding:5px 14px;border-radius:20px;margin-bottom:1.25rem;text-transform:uppercase;letter-spacing:.05em}
+
+/* PROSE */
+.prose{max-width:720px;margin:0 auto;padding:3rem 1.5rem}
+.prose h2{font-family:'Space Grotesk',sans-serif;font-size:1.4rem;font-weight:700;margin:2rem 0 .75rem}
+.prose p{font-size:15px;color:var(--muted);line-height:1.8;margin-bottom:1rem}
+.prose ul{margin-left:1.25rem;margin-bottom:1rem}
+.prose li{font-size:15px;color:var(--muted);line-height:1.8;margin-bottom:.4rem}
+.prose a{color:var(--accent)}
+
+/* FOOTER */
+footer{background:var(--surface);border-top:1px solid var(--border);padding:3rem 0 2rem}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2rem;margin-bottom:2rem}
+.footer-brand p{font-size:14px;color:var(--muted);line-height:1.7;max-width:260px;margin-top:1rem}
+.footer-col h4{font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:700;margin-bottom:1rem;color:var(--text)}
+.footer-col a{display:block;font-size:14px;color:var(--muted);margin-bottom:.5rem;transition:.15s}
+.footer-col a:hover{color:var(--accent)}
+.footer-bottom{border-top:1px solid var(--border);padding-top:1.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+.footer-bottom p,.footer-links a{font-size:13px;color:var(--muted)}
+.footer-links{display:flex;gap:1.5rem}
+.footer-links a:hover{color:var(--accent)}
+.footer-note{font-size:12px;color:var(--light);margin-top:1rem}
+
+/* CONTACT */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;max-width:900px;margin:0 auto;padding:3rem 1.5rem}
+.contact-item{display:flex;align-items:flex-start;gap:12px;margin-bottom:1.25rem}
+.contact-item-icon{width:40px;height:40px;border-radius:10px;background:var(--accent-light);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.contact-item-text h4{font-size:14px;font-weight:600;margin-bottom:2px}
+.contact-item-text p{font-size:14px;color:var(--muted);margin:0}
+.contact-form{background:#fff;border:1px solid var(--border);border-radius:16px;padding:2rem}
+.form-group{margin-bottom:1.25rem}
+.form-group label{display:block;font-size:13px;font-weight:600;margin-bottom:.4rem}
+.form-group input,.form-group textarea,.form-group select{width:100%;padding:10px 14px;border:1.5px solid var(--border);border-radius:8px;font-size:14px;font-family:'Inter',sans-serif;color:var(--text);background:#fff;transition:.15s;outline:none}
+.form-group input:focus,.form-group textarea:focus,.form-group select:focus{border-color:var(--accent)}
+.form-group textarea{resize:vertical;min-height:120px}
+
+/* CTA BANNER */
+.cta-banner{background:linear-gradient(135deg,#0f172a,#1e3a5f);padding:4rem;color:#fff;border-radius:16px;text-align:center;margin:0 0 4rem}
+.cta-banner h2{font-family:'Space Grotesk',sans-serif;font-size:2rem;font-weight:700;margin-bottom:1rem}
+.cta-banner p{color:rgba(255,255,255,.7);margin-bottom:2rem;font-size:16px}
+.btn-white{background:#fff;color:#0f172a;padding:12px 28px;border-radius:8px;font-weight:700;font-size:15px;display:inline-block;transition:.15s}
+.btn-white:hover{background:#f1f5f9}
+
+/* CAT GRID */
+.cat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.cat-card{background:#fff;border:1px solid var(--border);border-radius:12px;padding:2rem;transition:.2s;display:block}
+.cat-card:hover{border-color:var(--accent);box-shadow:0 4px 20px rgba(22,163,74,.08)}
+.cat-icon-wrap{width:56px;height:56px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:28px;margin-bottom:1rem}
+.cat-name{font-family:'Space Grotesk',sans-serif;font-size:17px;font-weight:700;margin-bottom:.5rem}
+.cat-desc{font-size:14px;color:var(--muted);line-height:1.6;margin-bottom:1rem}
+.cat-count{font-size:12px;font-weight:600;color:var(--accent)}
+
+/* HOW */
+.how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+.how-num{width:40px;height:40px;border-radius:10px;background:var(--accent-light);color:var(--accent-dark);font-family:'Space Grotesk',sans-serif;font-size:16px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-bottom:1rem}
+.how-title{font-family:'Space Grotesk',sans-serif;font-size:17px;font-weight:700;margin-bottom:.5rem}
+.how-desc{font-size:14px;color:var(--muted);line-height:1.7}
+
+@media(max-width:768px){
+  .nav-menu{display:none}
+  .stats-inner{grid-template-columns:repeat(2,1fr)}
+  .stat{border-right:none;border-bottom:1px solid var(--border)}
+  .cat-grid,.how-grid,.blog-grid,.footer-grid,.contact-grid{grid-template-columns:1fr}
+  .tool-grid{grid-template-columns:1fr}
+  .cta-banner{padding:2rem 1.5rem}
+}
